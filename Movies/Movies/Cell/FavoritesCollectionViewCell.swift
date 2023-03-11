@@ -10,7 +10,7 @@ protocol FavoriteCollectionViewCellDelegate : AnyObject{
     func navigateToMovieDetail(indexPath:IndexPath)
 }
 
-class FavoritesCollectionViewCell: UICollectionViewCell{
+final class FavoritesCollectionViewCell: UICollectionViewCell{
     var a = 0
     @IBOutlet private weak var movieImageView: UIImageView!
     @IBOutlet private weak var movieDateLabel: UILabel!

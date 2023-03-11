@@ -9,7 +9,7 @@ import UIKit
 protocol MovieCollectionViewCellDelegate{
     func navigateToMovieDetail(indexPath:IndexPath)
 }
-class MovieCollectionViewCell: UICollectionViewCell {
+final class MovieCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet private weak var movieImageView: UIImageView!
     @IBOutlet private weak var movieNameLabel: UILabel!
